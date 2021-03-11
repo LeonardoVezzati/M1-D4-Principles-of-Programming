@@ -135,7 +135,7 @@ const upperFirst = function(sentenceToCapitalize) {
   let splitSentence = sentenceToCapitalize.split(" ")
   //return splitSentence
   for(let i = 0; i < splitSentence.length; i++){
-    splitSentence[i] = splitSentence[i].charAt(0).toUpperCase();
+    splitSentence[i] = splitSentence[i].charAt(0).toUpperCase() + splitSentence[i].slice(1);
   }
   let joinSentence = splitSentence.join(" ")
   return joinSentence
